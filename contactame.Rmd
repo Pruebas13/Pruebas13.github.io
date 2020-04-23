@@ -55,10 +55,11 @@ textarea {
 </head>
     <body>
 <form name="contactform" method="post" action="sendbymail.php">    
-  <input name="name" type="text" class="feedback-input" placeholder="Nombre" />   
-  <input name="email" type="text" class="feedback-input" placeholder="Email" />
-  <textarea name="text" class="feedback-input" placeholder="Mensaje"></textarea>
-  <input type="submit" value="ENVIAR"/>
+  <input name="name" type="text" class="feedback-input" placeholder="Nombre" required />   
+  <input name="email" type="text" class="feedback-input" placeholder="Email" required/>
+<input name="phone" type="text" class="feedback-input" placeholder="Teléfono" required/>
+  <textarea name="text" class="feedback-input" placeholder="Mensaje" required></textarea>
+  <input name="buttom"type="submit" value="ENVIAR"/>
 </form>
  </body>
 </html>
