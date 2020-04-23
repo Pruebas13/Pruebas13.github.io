@@ -2,62 +2,52 @@
 title: " "
 ---
 
-
-<style>
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-
-body { background:rgb(255,255,255); }
-form { max-width:420px; margin:50px auto; }
-
-.feedback-input {
-  color:black;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border:2px solid #008ffb;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
-}
-
-.feedback-input:focus { border:2px solid #008ffb; }
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize:vertical;
-}
-
-[type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
-  background:#53a2fb;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  color:white;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
-  transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
-}
-[type="submit"]:hover { background:#0914a7; }
-</style>
-
-<head>
-
-<form> 
-  <form name="frmContacto" method="post" action="sendbymail.php">     
-  <input name="name" type="text" class="feedback-input" placeholder="Nombre" />   
-  <input name="email" type="text" class="feedback-input" placeholder="Email" />
-  <textarea name="text" class="feedback-input" placeholder="Mensaje"></textarea>
-  <input type="submit" value="ENVIAR"/>
+<form name="contactform" method="post" action="sendbymail.php">
+<table width="450px">
+<tr>
+ <td valign="top">
+  <label for="first_name">Nombre *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="last_name">Apellido *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">E-mail *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telefono</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="message">Mensaje *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="message" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Enviar">   <a href="http://www.tufelicidadvacacional.com.ve/email_form.php"></a>
+ </td>
+</tr>
+</table>
 </form>
