@@ -1,0 +1,17 @@
+name: "my-website"
+output_dir: "." 
+navbar:
+  title: "Mi Sitio Web"
+  left:
+    - text: "Inicio"
+      href: index.html
+    - text: "Contacto"
+      href: contactame.html
+output:
+  html_document:
+    theme: cerulean
+    css: 'styles.css'
+    highlight: zenburn 
+
+
+
