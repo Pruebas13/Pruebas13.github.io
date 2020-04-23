@@ -1,6 +1,6 @@
 
 <?php 
-    if(isset($_POST['email'])){
+    if(isset($_POST['buttoml'])){
         if($_POST['name'] == ''){
             $errors[1] = '<span class="error">Ingrese su nombre</span>';
         }else if($_POST['email'] == '' or !preg_match("/^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/",$_POST['email'])){
