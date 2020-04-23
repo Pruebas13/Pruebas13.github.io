@@ -7,6 +7,8 @@ navbar:
       href: index.html
     - text: "Contacto"
       href: contactame.html
+    - text: "Contacto2"
+      href: indexx.html
 output:
   html_document:
     theme: cerulean
