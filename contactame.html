@@ -336,14 +336,21 @@ textarea {
 </style>
 </head>
 <body>
-<form name="contactform" method="post" action="https://script.google.com/macros/s/AKfycbyIN8xSNuyHSZLGlmRYowbnNLj9fjwKd_hwNLMG/exec">
-<input name="name" type="text" class="feedback-input" placeholder="Nombre" required /><br />
-<input name="email" type="text" class="feedback-input" placeholder="Email" required/> <input name="phone" type="text" class="feedback-input" placeholder="Teléfono" required/>
-<textarea name="text" class="feedback-input" placeholder="Mensaje" required></textarea>
+<form name="gform" id ="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfdfaKSy4WVrTL_PpckZf1WbGeBvzEopUL3ZVAkTGiYKkqCrw/viewform?usp=sf_link" target="hidden_iframe" onsubmit="submitted=true;">
+<input name="entry.517794548" id="entry.517794548" type="text" class="feedback-input" placeholder="Nombre"/><br />
+<input name="entry.823176884" id="entry.823176884" type="text" class="feedback-input" placeholder="Email"/> <input name="entry.329960015" id="entry.329960015" type="text" class="feedback-input" placeholder="Teléfono"/>
+<textarea name="entry.1570795484" id="entry.1570795484" class="feedback-input" placeholder="Mensaje"></textarea>
 <input name="buttom"type="submit" value="ENVIAR"/>
 </form>
-<script dscript data-cfasync="false" type="text/javascript" 
-src="https://raw.githubusercontent.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
 </body>
 </html>
 
