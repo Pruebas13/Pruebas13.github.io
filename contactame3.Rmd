@@ -59,14 +59,15 @@ textarea {
 </style>
 </head> 
   <body>
-<form name="contactform" method="post" action="https://script.google.com/macros/s/AKfycbyIN8xSNuyHSZLGlmRYowbnNLj9fjwKd_hwNLMG/exec">    
+<form name="contactform" method="post" action="https://app.99inbound.com/api/e/hB5ewb94" target="_blank">    
   <input name="name" type="text" class="feedback-input" placeholder="Nombre" required />   
   <input name="email" type="text" class="feedback-input" placeholder="Email" required/>
-<input name="phone" type="text" class="feedback-input" placeholder="Teléfono" required/>
+<input name="phone" type="text" class="feedback-input" placeholder="Telefono" required/>
   <textarea name="text" class="feedback-input" placeholder="Mensaje" required></textarea>
   <input name="buttom"type="submit" value="ENVIAR"/>
+<div style="position: absolute; left: -5000px;">
+  <input type="checkbox" name="bluetooth_magenta_argyle_rhino" value="1" tabindex="-1" autocomplete="no">
 </form>
-< script  data-cfasync = "false"  type = "text / javascript" 
-src = "https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server/blob/master/form-submission-handler.js" > < / script >
+</div>
  </body>
 </html>

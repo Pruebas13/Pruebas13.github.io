@@ -264,6 +264,9 @@ $(document).ready(function () {
 <li>
   <a href="indexx.html">Contacto2</a>
 </li>
+<li>
+  <a href="contactame3.html">Contacto3</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -336,21 +339,13 @@ textarea {
 </style>
 </head>
 <body>
-<form name="gform" id ="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfdfaKSy4WVrTL_PpckZf1WbGeBvzEopUL3ZVAkTGiYKkqCrw/viewform" target="hidden_iframe" onsubmit="submitted=true;">
-<input type="text" name="entry.517794548" id="entry.517794548" class="feedback-input" placeholder="Nombre"/><br />
-<input type="text" name="entry.823176884" id="entry.823176884" class="feedback-input" placeholder="Email"/> <input type="text" name="entry.329960015" id="entry.329960015" class="feedback-input" placeholder="Teléfono"/>
-<textarea name="entry.1570795484" id="entry.1570795484" class="feedback-input" placeholder="Mensaje"></textarea>
+<form name="contactform" method="post" action="https://script.google.com/macros/s/AKfycbyIN8xSNuyHSZLGlmRYowbnNLj9fjwKd_hwNLMG/exec">
+<input name="name" type="text" class="feedback-input" placeholder="Nombre" required /><br />
+<input name="email" type="text" class="feedback-input" placeholder="Email" required/> <input name="phone" type="text" class="feedback-input" placeholder="Teléfono" required/>
+<textarea name="text" class="feedback-input" placeholder="Mensaje" required></textarea>
 <input name="buttom"type="submit" value="ENVIAR"/>
 </form>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-<script src="assets/js/jquery.min.js"></script>
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
-  });
-</script>
+&lt; script data-cfasync = “false” type = “text / javascript” src = “<a href="https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server/blob/master/form-submission-handler.js" class="uri">https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server/blob/master/form-submission-handler.js</a>” &gt; &lt; / script &gt;
 </body>
 </html>
 
